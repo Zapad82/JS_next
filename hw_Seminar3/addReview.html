@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Добавление отзыва о продукте</title>
+  <style>
+    form {
+      margin: 20px;
+    }
+    input, textarea {
+      margin-bottom: 10px;
+      display: block;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Добавление отзыва о продукте</h1>
+  <form id="reviewForm">
+    <input type="text" id="productName" placeholder="Название продукта">
+    <textarea id="reviewText" placeholder="Текст отзыва"></textarea>
+    <button type="submit">Добавить отзыв</button>
+    <p id="error" class="error"></p>
+  </form>
+
+  <script src="addReview.js"></script>
+</body>
+</html>
